@@ -32,4 +32,4 @@ jobs:
           context: "./.current projects/Docker/goodmorningbreadsticks.com"
           file: "./.current projects/Docker/goodmorningbreadsticks.com/Dockerfile"
           push: true
-          tags: yourdockerhubusername/yourimage:latest
+          tags: whitecomit/goodmorning-breadsticks:latest
