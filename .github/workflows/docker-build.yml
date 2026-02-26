@@ -22,6 +22,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: gh-colebritton/.gh/.current projects/Docker/goodmorningbreadsticks.com/
           push: true
           tags: whitecomit/goodmorning-breadsticks:latest
