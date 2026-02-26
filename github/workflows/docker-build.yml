@@ -29,7 +29,7 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: "./.current projects/Docker/goodmorningbreadsticks.com"
-          file: "./.current projects/Docker/goodmorningbreadsticks.com/Dockerfile"
+          context: "./.currentprojects/Docker/goodmorningbreadsticks.com"
+          file: "./.currentprojects/Docker/goodmorningbreadsticks.com/Dockerfile"
           push: true
           tags: whitecomit/goodmorning-breadsticks:latest
