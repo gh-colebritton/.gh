@@ -1,8 +1,8 @@
-::This script copies my Sync_Main directory to my USB
+::This script copies my sync_main directory to my sync_usb 
 
 @echo off
 setlocal
-set "SOURCE=C:\Users\white\OneDrive\Documents\Sync_Main"
+set "SOURCE=C:\Users\white\OneDrive\Documents\sync_main"
 set "LABEL=CDB-USB"
 
 :: Find USB drive letter by label using PowerShell
@@ -13,7 +13,7 @@ if not defined DRIVE (
     exit /b
 )
 
-set "DEST=%DRIVE%:\Sync_USB"
+set "DEST=%DRIVE%:\sync_usb"
 
 robocopy "%SOURCE%" "%DEST%" /MIR /R:2 /W:5 /FFT >nul
 
