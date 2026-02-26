@@ -1,3 +1,5 @@
+::This script copies my Sync_Main directory to my USB
+
 @echo off
 setlocal
 set "SOURCE=C:\Users\white\OneDrive\Documents\Sync_Main"
