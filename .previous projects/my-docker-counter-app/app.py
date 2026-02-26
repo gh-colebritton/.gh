@@ -1,0 +1,19 @@
+# # docker app that i had attempted to use at some point and abandoned. This eventually became a website in Azure using ACR and ACA. its now hosted on goodmorningbreadsticks.com
+
+from flask import Flask, render_template, jsonify
+
+app = Flask(__name__)
+counter = 0
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/increment", methods=["POST"])
+def increment():
+    global counter
+    counter += 1
+    return jsonify({"count": counter})
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)

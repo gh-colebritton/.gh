@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter App</title>
+    <script>
+        async function incrementCounter() {
+            const response = await fetch("/increment", { method: "POST" });
+            const data = await response.json();
+            document.getElementById("counter").textContent = data.count;
+        }
+    </script>
+</head>
+<body>
+    <h1>Counter: <span id="counter">0</span></h1>
+    <button onclick="incrementCounter()">Click Me</button>
+</body>
+</html>
